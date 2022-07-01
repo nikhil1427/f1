@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Registration.master.cs" Inherits="Registration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Simple Green
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080808
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Panippura</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="DailyWage/reg.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css">
+        .style1
+        {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="topbg" ><center><table vspace="10px"><tr align="center">
+    <td width="170" 
+        class="style1">   
+    <a href="Login.aspx" style="font-size: medium;">Home</a></td>
+								<td width="170" class="style1"><a href="Registration.aspx" style="font-size: medium">Register</a></td>
+                                <td width="170" class="style1"><a href="Search.aspx" shape="rect" style="font-size: medium">Search</a></td>
+								<td width="170" class="style1"><a href="ContactUs.aspx" style="font-size: medium">Contact Us</a></td></tr></table></center>
+</div>
+<!-- end header -->
+<!-- start page -->
+
+	<div id="page">
+		<div class="bgtop">
+			<div class="bgbtm">
+				<!-- start content --><!-- end content -->
+				<!-- start sidebar -->
+               <a href="Login.aspx"> <div id="logo"></div></a>
+				<!-- end sidebar -->
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+				<div style="clear:both">&nbsp;
+				  </div>
+		  </div>
+		</div>
+	</div>
+<div id="footer">
+	<p>&copy;2016 All Rights Reserved. &nbsp;&bull;&nbsp; Design by: PrabinKumar N</p>
+</div>
+<div align=center></div>
+    </form>
+</body>
+</html>

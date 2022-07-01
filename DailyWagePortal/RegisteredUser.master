@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RegisteredUser.master.cs" Inherits="RegisteredUser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Simple Green
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080808
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Panippura</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="DailyWage/regusr.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            height: 200px;
+        }
+        .style5
+        {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="topbg" ><table vspace="10px" style="height: 50px"><tr align="center">
+    <td width="165" 
+        class="style5">   
+        &nbsp;</td>
+								<td width="165" class="style5">&nbsp;</td>
+                                <td width="165" class="style5">&nbsp;</td>
+                                <td width="165" class="style5">&nbsp;</td>
+								<td width="165" class="style5">&nbsp;</td></tr></table>
+</div>
+<!-- end header -->
+<!-- start page -->
+
+	<div id="page">
+		<div class="bgtop">
+			<div class="bgbtm">
+				<!-- start content -->
+				<div id="content">
+				    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+				</div>
+				<!-- end content -->
+                <div id="logo"></div>
+				<!-- start sidebar -->
+				<div id="sidebar3">
+				    <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:MultiView ID="MultiView1" runat="server">
+                            <table class="style1">
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        <asp:View ID="View1" runat="server">
+                                            <table class="style1">
+                                                <tr>
+                                                    <td class="style3" valign="middle">
+                                                    </td>
+                                                    <td class="style3" valign="middle">
+                                                        &nbsp;</td>
+                                                    <td class="style3" valign="middle">
+                                                        &nbsp;</td>
+                                                    <td class="style3" valign="middle">
+                                                        <asp:Menu ID="Menu1" runat="server" Font-Size="Medium">
+                                                            <Items>
+                                                                <asp:MenuItem NavigateUrl="~/AreaDetails.aspx" Text="Area Details" 
+                                                                    Value="Area Details"></asp:MenuItem>
+                                                                <asp:MenuItem NavigateUrl="~/JobDetails.aspx" Text="Job Details" 
+                                                                    Value="Job Details"></asp:MenuItem>
+                                                                <asp:MenuItem NavigateUrl="~/ViewEmployees.aspx" Text="Employees" 
+                                                                    Value="Employees"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Change Password" Value="Change Password" 
+                                                                    NavigateUrl="~/ChangePassword.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Logout" Value="Logout">
+                                                                </asp:MenuItem>
+                                                            </Items>
+                                                        </asp:Menu>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </asp:View>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                        <asp:View ID="View2" runat="server">
+                                            <table class="style1">
+                                                <tr>
+                                                    <td class="style3">
+                                                        &nbsp;</td>
+                                                    <td class="style3">
+                                                        &nbsp;</td>
+                                                    <td class="style3">
+                                                        &nbsp;</td>
+                                                    <td class="style3">
+                                                        <asp:Menu ID="Menu2" runat="server" Font-Size="Medium">
+                                                            <Items>
+                                                                <asp:MenuItem Text="Profile" Value="Profile" NavigateUrl="~/EmployProfile.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem NavigateUrl="~/ChangePassword.aspx" Text="Change Password" 
+                                                                    Value="Change Password"></asp:MenuItem>
+                                                                <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Logout" Value="Logout">
+                                                                </asp:MenuItem>
+                                                            </Items>
+                                                        </asp:Menu>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </asp:View>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:MultiView>
+                    </asp:ContentPlaceHolder>
+                    </div></div>
+				<!-- end sidebar -->
+				<div style="clear:both">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+<div id="footer">
+	<p>&copy;2016 All Rights Reserved &nbsp;&bull;&nbsp; Design by :PrabinKumar N</a>.</p>
+</div>
+    </form>
+</body>
+</html>

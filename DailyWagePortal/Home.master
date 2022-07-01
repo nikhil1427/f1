@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Simple Green
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080808
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Panippura</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="DailyWage/home.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="DailyWage/nivo-slider.css" type="text/css" media="screen" />
+    <style type="text/css">
+        .style2
+        {
+            height: 47px;
+        }
+    </style>
+</head>
+<body>
+<div id="topbg" ><center><table vspace="10px"><tr align="center"><td width="170" 
+        class="style2">   
+    <a href="Login.aspx" style="font-size: medium;">Home</a></td>
+								<td width="170" class="style2"><a href="Registration.aspx" style="font-size: medium">Register</a></td>
+                                <td width="170" class="style2"><a href="Search.aspx" shape="rect" style="font-size: medium">Search</a></td>
+								<td width="170" class="style2"><a href="ContactUs.aspx" style="font-size: medium">Contact Us</a></td></tr></table></center>
+</div>
+<div id="header" class="content_pad">
+                               <div id="wrapper">
+       <div id="slider-wrapper">       
+           <div id="slider" class="nivoSlider">
+           <img src="DailyWage/images/1.png" width="800" height="300"/>
+           <img alt="1" src="DailyWage/images/2.png" width="800" height="300"/>
+           <img src="DailyWage/images/3.png" width="800" height="300"/>
+           <img src="DailyWage/images/4.png" width="800" height="300"/>
+           <img src="DailyWage/images/5.png" width="800" height="300"/>
+           <img src="DailyWage/images/6.png" width="800" height="300"/>  </div>        
+       </div>
+</div>                          
+</div>
+
+<script type="text/javascript" src="DailyWage/lib/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="DailyWage/lib/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>	
+<!-- end header -->
+<!-- start page -->
+
+<div id="page">
+				<!-- start content -->
+				<div id="content">
+					<div class="post">
+						<h2 class="title" 
+                            style="font-size: 23px; height: 29px; font-family: Georgia; margin-top: 15px;">
+                            <asp:Label ID="Label2" runat="server" Font-Names="ML-TTGopika" Text="]Wn¸p-c" 
+                                Font-Size="X-Large"></asp:Label>
+&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Georgia" Font-Size="Large" 
+                                Text="( The Directory of Daily Wage Employees )"></asp:Label>
+&nbsp;</h2>
+						<div class="entry" 
+                            style="font-size: 23px; font-family: ML-TTPooram; text-indent: inherit;">
+                                    C¶s¯-¡me-¯v Zn-h-k-¡q-en¡v sXm-gn-em-fnI-sf e-`n-¡p-h-m³ {]-bm-k-amWv. Cu 
+                                    sh_vssk-äv C¯-cw sXm-gn-em-fnI-sf Xn-c-bm³- -\½sf F-fp-¸-¯nÂ klmbn¡p¶p. 
+                                    Cu kwhn-[m-\w D-]-tbm-Kn-¡m³ B-{K-ln-¡p-¶ sXm-gn-em-fnIÄ Cu sh_vssk-änÂ c-Pn-ÌÀ 
+                                    sN-¿-Ww.</div>
+						
+                        <h2 class="title" style="font-size: large; height: 29px; font-family: Georgia;">&nbsp;<asp:Label 
+                                ID="Label4" runat="server" Text="Panippura" Font-Names="Georgia" 
+                                Font-Size="Large"></asp:Label>      
+                            &nbsp;&nbsp;&nbsp;      
+                            <asp:Label ID="Label3" runat="server" Font-Names="Georgia" Font-Size="Large" 
+                                Text="( The Directory of Daily Wage Employees )"></asp:Label>
+                        </h2>
+                        <div class="entry" style="font-size: 18px">
+                                    Nowadays it is very difficult to get daily wage employees on time. This website 
+                                    provides the facility for searching and finding such employees. It can be easily 
+                                    find by entering the area and job in specified column. Those employees want to 
+                                    make use of this facility should be registered in this website.
+						
+                        </div>
+                        <div class="quote" 
+                            style="color: #FF0066; font-size: 23px; font-family: 'Monotype Corsiva';">
+                            &quot; To be successful, the first thing to do is fall in love with your work&nbsp; &quot;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; – Sister Mary Lauretta </div>
+						</div>
+                        </div>
+				<!-- end content -->
+				<!-- start sidebar -->
+                <!-- start sidebar2 -->
+                <!-- start sidebar3 -->
+				<div id="sidebar"><div id="sidebar2"><div id="sidebar3"> 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </div></div></div>
+				<!-- end sidebar -->
+                <!-- end sidebar2 -->
+                <!-- end sidebar3 -->
+				<div style="clear:both">&nbsp;</div>
+			</div>
+<div id="footer">
+  <p>&copy;2016 All Rights Reserved &nbsp;&bull;&nbsp; Design by : PrabinKumar N</p>
+</div>
+</body>
+</html>
